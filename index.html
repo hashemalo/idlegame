@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+    <head>
+        <title>Humanity Clicker</title>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+ 
+    <body style= "background-image: url('images/realbg.gif');
+    background-repeat: no-repepat;
+    background-attachment: fixed;
+    background-size: 100% 100%;">
+ 
+        <div class="sectionLeft">
+            <center>
+            <div class="wisdomContainer unselectable">
+                <span id = "wisdomCosmetic"><span id="wisdom"></span> Wisdom</p></span>
+                <span id="IQ"></span> IQ</p>
+                <div class="wpsContainer">
+                    <span id="wisdompersecond"></span> Wisdom Per Second</p>
+                </div>
+            </div>
+
+            <div class="unselectable" id="clicker"></div>
+           
+ 
+        </center>
+ 
+        <div class="sectionStats unselectable">
+            <div id="statsMenu" >
+            <span id="statsHead"><center>STATISTICS: </p></p></center></span>
+            <span id="statsText"> General: </span>
+            <div id="statsContainer">
+                <p>Current Wisdom: <span id="statWisdom">0</span></p>
+                <p>All-Time Wisdom: <span id="totalWisdom">0</span></p>
+                <p>IQ: <span id="totalIQ">0</span></p>
+                <p>Buildings Owned: <span id="buildingsOwned">0</span></p>
+                <p>Wisdom Per Second: <span id="wps">0</span></p>
+                <p>Wisdom Per Click: <span id="wisdomPerClick">0</span></p>
+                <p>Total Clicks: <span id="totalClicks">0</span></p>
+                <p>Self-Made Wisdom: <span id="selfMadeWisdom">0</span></p>
+                <p>Time Played: <span id="timePlayed">0</span></p>
+            </div>
+            <span id="statsText" > Achievements: </span>
+            <div id="achievementContainer"></div>
+            <span id="statsText"> Upgrades: </p></span>
+            <div id="statUpgrades"></div>
+        </div>
+        </div>
+        <div id="saveMenu">
+       <button id="saveButtons" onClick="resetGame();">Reset Game</button></p>
+        <button id="saveButtons" onClick="saveGame();">Save Game</button>
+            </div>
+        </div>
+    </div>
+
+       
+        <div class="sectionRight unselectable" >
+            <div id="upgradeContainer"></div>
+            <div id="shopContainer"></div>
+            
+        </div>
+        
+        <div class="sectionFooter unselectable">
+            <h5>Humanity Clicker</h5>
+ 
+        </div>
+       
+        <script src="main.js"></script>
+        <script src="save.js"></script>
+        <script  src="display.js"></script>
+        <script  src="buildings.js"></script>
+        <script  src="upgrades.js"></script>
+        <script  src="achievements.js"></script>
+    </body>
+</html>

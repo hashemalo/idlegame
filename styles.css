@@ -1,0 +1,271 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.sectionLeft{
+    float: left;
+    width: 25%;
+
+}
+.sectionLeft{
+    float: left;
+    width: 75%;
+
+    
+}
+
+.sectionRight{
+    float: right;
+    width: 15%;
+    border: 10px solid rgb(204, 38, 38);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-image: url("images/shopback.png");
+}
+.sectionStats {
+    float:left;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 500px;
+    height:1440px;
+    border-left: 5px solid rgb(150, 112, 112);
+    border-right: 5px solid rgb(150, 112, 112);;
+}
+.sectionStats #statsText {
+    font-size: large;
+    color:rgb(213, 219, 184);
+    font-size: 45px;
+}
+
+#saveMenu {
+    float:left;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 200px;
+    height:340px;
+}
+
+#saveButtons {
+    width: 200px;
+    height: 170px;
+    background-color: aqua;
+    transition: transform 0.25s;
+}
+
+#saveButtons:hover {
+    filter: brightness(80%);
+    transform: scale(1.05);
+}
+#statsContainer {
+    font-size: 20px;
+    color: rgb(156, 156, 156);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#statsHead {
+    font-size: large;
+    color:rgb(213, 219, 184);
+    font-size: 55px
+}
+
+.wisdomContainer {
+    border: 10px solid rgb(204, 38, 38);
+    background-color: rgba(0, 0, 0, 0.4);
+    float:left;
+    width: 30%;
+    padding: 10px;
+    border-radius: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: oldlace;
+    font-size: 20px;
+    
+}
+
+.wisdomContainer #wisdomCosmetic {
+    font-size: 25px;
+    
+}
+
+
+
+/*.clickerContainer img{
+    position: relative;
+    transition: 0.25s ;
+    float:left;
+    bottom: -300px;
+    left: -450px;
+    cursor: pointer;
+}
+.clickerContainer img:hover{ 
+    transform: scale(1.1);
+    transition: 0.25s;
+    float: left;
+}
+.clickerContainer img:active {
+    transform: scale(0.95);
+} */
+
+#clicker {
+    background-image: url(images/brain.png);
+    background-size: contain;
+    position:relative;
+    transition: all .2s ease-in-out;
+    bottom: -300px;
+    left: -450px;
+    cursor: pointer;
+    height: 256px;
+    width: 256px;
+    float: left;
+}
+
+#clicker:hover { transform:scale(1.1)}
+#clicker:active {transform: scale(0.99)}
+
+#clicker > .number {
+    z-index: 99;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    font-family: monospace;
+}
+
+.shopButton {
+    background-image: url("images/shopBG.jpg");
+    border-radius: 20px;
+    transition: all .25s;
+    width: 100%;
+    margin: -3px 0px -3px 0px;
+    
+}
+.shopButton:hover{
+    filter: brightness(110%);
+    transform: scale(1.01);
+ }
+
+
+.shopButton #nameAndCost p{
+    margin: 0px;
+    width: 100%;
+}
+.shopButton #nameAndCost p:first-of-type {
+    font-family: fantasy;
+    font-size: 30px;
+}
+.shopButton #amount {
+    color: rgb(10, 73, 20);
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.unselectable {
+    user-select: none;
+}
+
+.unkShopButton {
+    background-image: url("images/shopBG.jpg");
+    border-radius: 20px;
+    transition: all .25s ease-in-out;
+    width: 100%;
+    margin: -3px 0px -3px 0px;
+    filter: brightness(30%)
+    
+}
+.unkShopButton:hover {
+    filter: brightness(35%);
+    transform: scale(1.01);
+ }
+
+.unkShopButton #nameAndCost p{
+    margin: 0px;
+    width: 60%;
+}
+.unkShopButton #nameAndCost p:first-of-type {
+    font-family: fantasy;
+    font-size: 30px;
+}
+.unkShopButton #amount {
+    color: rgb(10, 73, 20);
+    font-size: 45px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.unkImage {
+    filter: brightness(0%);
+}
+
+#upgradeContainer img {
+    height: 64px;
+    width: 64px;
+    transition: top ease 0.5s;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 3px 3px 3px 3px;
+    
+}
+
+#upgradeContainer img:hover {
+    filter: brightness(125%); 
+    top: -1px;
+}
+
+
+#statUpgrades img{
+    height: 64px;
+    width: 64px;
+    transition: top ease 0.5s;
+    border-color: rgb(255, 255, 255);
+    border-style: double;
+    border-width: 3px 3px 3px 3px;
+}
+#statUpgrades img:hover {
+    filter: brightness(125%);
+    top: -1px; 
+}
+#achievementContainer img {
+    position:relative;
+    height: 64px;
+    width: 64px;
+    transition: top ease 0.5s;
+    border-color: rgb(255, 255, 255);
+    border-style: double;
+    
+}
+
+#knAchievement img{
+    background-color: cadetblue;
+    
+
+   
+}
+
+#unkAchievement img{
+    background-color: black;
+}
+
+#achievementContainer img:hover {
+    filter: brightness(125%); 
+    top: -1px;
+}
+
+
+
+/* USE KNOWNIMAGE*/
+.sectionFooter {
+    margin-bottom: 0%;
+    font-size: 20px;
+    font-family: verdana;
+    font-weight: 700;
+    color: #266640;
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4) !important;
+}
